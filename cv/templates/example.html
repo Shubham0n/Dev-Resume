@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Resume</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 16px Helvetica, Sans-Serif;
+        line-height: 24px;
+        background: url(images/noise.jpg);
+      }
+      .clear {
+        clear: both;
+      }
+      #page-wrap {
+        width: 800px;
+        margin: 40px auto 60px;
+      }
+      #pic {
+        float: right;
+        margin: -30px 0 0 0;
+      }
+      h1 {
+        margin: 0 0 16px 0;
+        padding: 0 0 16px 0;
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        border-bottom: 1px solid #999;
+      }
+      h3 {
+        font-size: 20px;
+        margin: 0 0 6px 0;
+        position: relative;
+      }
+      h3 span {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-style: italic;
+        font-family: Georgia, Serif;
+        font-size: 16px;
+        color: #999;
+        font-weight: normal;
+      }
+      span,
+      p {
+        font-style: italic;
+        font-family: Georgia, Serif;
+        font-size: 16px;
+        color: #999;
+        font-weight: normal;
+      }
+      p {
+        margin: 0 0 16px 0;
+      }
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px dotted #999;
+      }
+      a:hover {
+        border-bottom-style: solid;
+        color: black;
+      }
+      ul {
+        margin: 0 0 32px 17px;
+      }
+      #objective {
+        width: 100%;
+        float: left;
+      }
+      #objective p {
+        font-family: Georgia, Serif;
+        font-style: italic;
+        color: #666;
+      }
+      dt {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right;
+        padding: 0 12px 0 0;
+        width: 120px;
+        float: left;
+        height: auto;
+        border-right: 1px solid #999;
+      }
+      dd {
+        width: 650px;
+        float: right;
+      }
+      dd.clear {
+        float: none;
+        margin: 0;
+        height: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page-wrap">
+      <!-- <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" /> -->
+
+      <div id="contact-info" class="vcard">
+        <h1 class="fn">Shubham Patel</h1>
+
+        <p>
+          Phone No.: <span class="tel">+91 9601605752</span><br />
+          Email:
+          <a class="email" href="mailto:greatoldone@lovecraft.com"
+            >shubhamnp31@gmail.com</a
+          >
+        </p>
+      </div>
+
+      <div id="objective">
+        <p>
+          I am a skilled Full Stack Developer with experience in building
+          scalable web applications. I specialize in backend development using
+          Django, Flask, and FastAPI, and have strong knowledge of building
+          RESTful APIs with Django Rest Framework (DRF). I am also experienced
+          in frontend development using JavaScript, HTML5, and CSS. I have
+          worked with cloud services like AWS EC2, S3, DynamoDB, and App Runner,
+          and I use Docker for containerization and CI/CD pipelines for smooth
+          deployment. I also have experience integrating Stripe and Razorpay for
+          subscription and payment processing. I also have expertise in web
+          scraping, enabling the extraction of valuable data from websites for
+          various application
+        </p>
+      </div>
+
+      <div class="clear"></div>
+
+      <!-- Skills -->
+      <dt>Skills</dt>
+      <dd>
+        <ul>
+          <li><strong>Languages:</strong> Python, SQL</li>
+          <li>
+            <strong>Machine Learning:</strong> Numpy, Pandas, Matplotlib,
+            Seaborn
+          </li>
+          <li>
+            <strong>Deep Learning:</strong> TensorFlow, Computer Vision, GAN,
+            NLP
+          </li>
+          <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+          <li><strong>API Development:</strong> FastAPI, Flask</li>
+          <li><strong>DevOps:</strong> Git, Github, Docker, GCP</li>
+          <li>
+            <strong>Soft Skills:</strong> Leadership, Time Management,
+            Collaboration
+          </li>
+        </ul>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <!-- Experience -->
+      <dt>Experience</dt>
+      <dd>
+        <h3>Jr. Python Developer<span>Tagline Infotech LLP</span></h3>
+        <h3>
+          <p></p>
+          <span>June 2022 - Feb 2024</span>
+        </h3>
+        <ul>
+          <div>
+            <li><b>Job Management System</b></li>
+            <span
+              ><b>Technologies:</b>Django, Django Rest Framework, WebSockets,
+              Amazon S3, Python, Swagger, Postman, Sentry</span
+            >
+            <p>
+              <b>Description:</b>
+              Created a real-time job management platform for web and mobile
+              users, featuring WebSocket-based chat for seamless communication
+              and Amazon S3 integration for secure file storage. The project
+              alsooptimized image handling using Python and incorporated Django
+              Rest Framework for API alsooptimized image handling using Python
+              and incorporated Django Rest Framework for API development, with
+              Swagger and Postman utilized for API documentation and testing.
+              Debugging was enhanced through Sentry, ensuring a stable and
+              reliable platform. Additionally, the system supported
+              multi-language functionality, making it suitable for a global
+              audience and highly scalable.
+            </p>
+          </div>
+          <div>
+            <li><b>Face26 -AI-Powered Image Enhancement Suit</b></li>
+            <span><b>Technologies:</b>Flask, AWS S3, CI/CD, Stripe</span>
+            <p>
+              <b>Description:</b>
+              Developed a comprehensive AI-driven platform for advanced image
+              processing and enhancement. The platform features a variety of
+              tools, including watermark removal, inpaint cleanup to restore
+              photos by removing unwanted objects or people, background removal
+              to isolate subjects, and old photos by removing unwanted objects
+              or people, background removal to isolate subjects, and old photo
+              restoration to repair damaged images. Additional capabilities
+              include photo colorization for black-and-white images, unblurring
+              of photos, AI-driven upscaling resolution, photo animation for
+              lifelike expressions, and transforming AI-generated images into
+              photorealistic visuals. For monetization, integrated Stripe to
+              handle subscriptions, providing users with seamless access to
+              premium features based on their subscription plans
+            </p>
+          </div>
+        </ul>
+
+        <h3>Sr. Python Developer<span>Innovazive Software Pvt Ltd</span></h3>
+        <h3>
+          <p></p>
+          <span>Feb 2024 - June 2024</span>
+        </h3>
+        <ul>
+          <div>
+            <li><b>Vatika ERP (Medicine Delivery & Management System)</b></li>
+            <span
+              ><b>Technologies:</b> Django, Rest Framework, Docker, Docker
+              Compose, Celery, Pandas</span
+            >
+            <p>
+              <b>Description:</b>
+              Contributed to the development of an ERP system for medicine
+              delivery and management. The project utilized Django Rest
+              Framework for building robust APIs and pandas for handling complex
+              data processing, including converting processing, including
+              converting Excel to PDF formats. Real-time updates were enabled
+              using Celery for background tasks and Django Signals for socket
+              communication. Deployment processes were streamlined using Docker
+              and Docker Compose, ensuring scalability and efficiency. This
+              project emphasized dynamic real-time application development with
+              a focus on reliability and performance in the healthcare domai
+            </p>
+          </div>
+        </ul>
+
+        <h3>Sr. Python Developer<span>Bitcoding Solution</span></h3>
+        <h3>
+          <p></p>
+          <span>July 2024 - Percent</span>
+        </h3>
+        <ul>
+          <div>
+            <li><b>FASPP - Easy Deployment</b></li>
+            <span
+              ><b>Technologies:</b> FastAPI, Docker, AWS App Runner, CI/CD</span
+            >
+            <p>
+              <b>Description:</b>
+              Designed and implemented an efficient deployment solution for
+              FastAPI projects tailored for non technical users. The project
+              involved containerizing FastAPI applications using Docker to
+              ensure portability and scalability, setting up automated CI/CD
+              pipelines to streamline updates and minimize portability and
+              scalability, setting up automated CI/CD pipelines to streamline
+              updates and minimize downtime, and leveraging AWS App Runner for
+              cloud deployment with minimal configuration. This solution
+              simplified deployment workflows, making project launches seamless
+              and accessible for users with limited technical expertise
+            </p>
+          </div>
+          <div>
+            <li><b> ClassDekho - Online Class & Course Managemen</b></li>
+            <span
+              ><b>Technologies:</b> Django, DRF, Firebase, Stripe, Docker</span
+            >
+            <p>
+              <b>Description:</b>
+              Class Dekho is an online platform that streamlines class and
+              course management for both instructors and students. Built with
+              Django and Django Rest Framework (DRF), it allows instructors to
+              easily create and manage courses, while students can browse
+              available classes, enroll, and purchase courses and manage
+              courses, while students can browse available classes, enroll, and
+              purchase courses effortlessly. The platform integrates Firebase
+              for real-time notifications to keep students updated on course
+              changes, and an SMS service for timely reminders. For payment
+              processing, Stripe handles secure, subscription-based
+              transactions. The entire application is dockerized for consistency
+              across development and production environments. The Django Admin
+              Panel is customized to manage courses, users, and payments,
+              ensuring secure and smooth operations.
+            </p>
+          </div>
+        </ul>
+
+        <h3>Freelancer<span>Freelancing</span></h3>
+        <h3>
+          <p></p>
+          <span>Feb 2024 - Percent</span>
+        </h3>
+        <ul>
+          <div>
+            <li><b>Keyur Zaveri - Real Estate Platform</b></li>
+            <span
+              ><b>Technologies:</b>Django, HTML, CSS, JavaScript, PostgreSQL,
+              AWS EC2, SEO</span
+            >
+            <p>
+              <b>Description:</b>
+              Developed a real estate platform for Keyur Zaveri, allowing users
+              to browse, buy, and sell properties. The project utilizes Django
+              for the backend and HTML, CSS, and JavaScrip t for the frontend.
+              Key features include property listings, advanced search
+              functionality, and user management. I customized the include
+              property listings, advanced search functionality, and user
+              management. I customized the Django Admin Panel for easy property
+              management, user administration, and transaction tracking.
+              Deployed the platform on AWS EC2 with a custom domain, and
+              implemented SEO optimization to improve site visibility. The
+              platform uses PostgreSQL for reliable database management and data
+              security.
+            </p>
+          </div>
+          <div>
+            <li><b>Movies APIs</b></li>
+            <span
+              ><b>Technologies:</b>Django, HTML, CSS, JavaScript, PostgreSQL,
+              AWS EC2, SEO, MySQL, cPane</span
+            >
+            <p>
+              <b>Description:</b>
+              Class Dekho is an online platform that streamlines class and
+              course management for both instructors and students. Built with
+              Django and Django Rest Framework (DRF), it allows instructors to
+              easily create and manage courses, while students can browse
+              available classes, enroll, and purchase courses and manage
+              courses, while students can browse available classes, enroll, and
+              purchase courses effortlessly. The platform integrates Firebase
+              for real-time notifications to keep students updated on course
+              changes, and an SMS service for timely reminders. For payment
+              processing, Stripe handles secure, subscription-based
+              transactions. The entire application is dockerized for consistency
+              across development and production environments. The Django Admin
+              Panel is customized to manage courses, users, and payments,
+              ensuring secure and smooth operations.
+            </p>
+          </div>
+        </ul>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dl>
+        <dd class="clear"></dd>
+
+        <dt>Education</dt>
+        <dd>
+          <h3>
+            Bachelor of Computer Application
+            <span> July 2019 - April 2022</span>
+          </h3>
+          <p>
+            Veer Narmad South Gujarat University<br />
+            SGPA - 8.7 <br />
+            CGPA - 7.7
+          </p>
+        </dd>
+
+        <dd class="clear"></dd>
+
+        <dt>Languages</dt>
+        <dd>
+          <h3>English <span> professional working proficiency</span></h3>
+          <h3>Hindi <span> Native or bilingual proficiency</span></h3>
+          <h3>Gujarati <span> Native or bilingual proficiency</span></h3>
+        </dd>
+
+        <dd class="clear"></dd>
+      </dl>
+
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>
