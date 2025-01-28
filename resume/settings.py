@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-bgu!@1d_%c$=r&l3#ycqr@wm7l3hkwxc=t3#yx^z0zcbi$mmx%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["psbitcoding.pythonanywhere.com", "127.0.0.1", "localhost"]
 
 
 # Application definition
