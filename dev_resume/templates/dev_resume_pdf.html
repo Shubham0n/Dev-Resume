@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One Page Resume</title>
     <style type="text/css">
+      @page {
+        size: A4;
+        margin: 1cm;
+      }
+      body {
+        font: 14px Helvetica, Sans-Serif;
+        line-height: 24px;
+        background: none; /* Remove background images for print */
+      }
       * {
         margin: 0;
         padding: 0;
-      }
-      body {
-        font: 16px Helvetica, Sans-Serif;
-        line-height: 24px;
-        background: url(images/noise.jpg);
       }
       .clear {
         clear: both;
       }
       #page-wrap {
-        width: 800px;
-        margin: 40px auto 60px;
+        width: 100%;
+        max-width: 100; /* A4 width */
+        margin: auto;
       }
       #pic {
         float: right;

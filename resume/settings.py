@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "import_export",
     "tinymce",
-    "cv",
+    "dev_resume",
     "admin_portal",
 ]
 

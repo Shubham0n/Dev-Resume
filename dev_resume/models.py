@@ -1,7 +1,9 @@
+import shortuuid
 from django.db import models
 from itertools import groupby
 from tinymce.models import HTMLField
 from admin_portal.models import Skill, Role, Language, Degree
+from django.utils.text import slugify
 
 
 # Developer models
@@ -14,18 +16,32 @@ class DeveloperProfile(models.Model):
     objective = models.TextField()
     address = models.TextField()
     total_experience = models.FloatField(help_text="Total experience in years")
-    role = models.ForeignKey(
-        Role,
-        on_delete=models.SET_NULL,
-        null=True,
-        blank=True,
-    )
+    role = models.ForeignKey(Role, on_delete=models.SET_NULL, null=True, blank=True)
     skills = models.ManyToManyField(Skill, related_name="developers_skills")
+    slug = models.SlugField(unique=True, null=True, blank=True)
 
     def __str__(self):
         return self.name
 
+    def save(self, *args, **kwargs):
+        """
+        Generate a unique slug based on the name and save it to the slug field.
+        """
+
+        if self.slug is None:
+            self.slug = slugify(f"{self.name}-{shortuuid.ShortUUID().random(length=7)}")
+        else:
+            if DeveloperProfile.objects.get(pk=self.pk).name != self.name:
+                self.slug = slugify(
+                    f"{self.name}-{shortuuid.ShortUUID().random(length=7)}"
+                )
+        super(DeveloperProfile, self).save(*args, **kwargs)
+
     def get_skills(self):
+        """
+        Return a dictionary of skills grouped by skill type.
+        """
+
         skills = self.skills.values("name", "skill_type__name").order_by(
             "skill_type__name"
         )

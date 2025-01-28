@@ -1,6 +1,6 @@
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
-from .models import (
+from dev_resume.models import (
     DeveloperProfile,
     DeveloperEducation,
     DeveloperExperience,
@@ -45,6 +45,7 @@ class DeveloperProfileAdmin(ImportExportModelAdmin):
     )
     search_fields = ("name", "email", "phone_number")
     list_filter = ("total_experience", "role")
+    readonly_fields = ("slug",)
     autocomplete_fields = ["skills", "role"]
     inlines = [
         DeveloperEducationInline,
